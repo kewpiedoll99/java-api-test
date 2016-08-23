@@ -2,19 +2,20 @@ package com.inrhythm.pojo;
 
 import java.io.Serializable;
 
-public class Posts implements Serializable {
+// singular name preferred IMO for individual object
+public class Post implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int userId;
+	private Integer userId; // allow for nulls
 	private int id;
 	private String title;
 	private String body;
 
-	public int getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
 
-	public void setUserId(int userId) {
+	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
 

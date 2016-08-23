@@ -3,7 +3,7 @@ package com.inrhythm;
 import org.junit.Test;
 
 import com.inrhythm.pojo.InRhythmResponse;
-import com.inrhythm.pojo.Posts;
+import com.inrhythm.pojo.Post;
 import com.inrhythm.service.impl.JsonService;
 
 import junit.framework.TestCase;
@@ -25,7 +25,7 @@ public class AppTest extends TestCase {
 		}
 
 		int postCount = 0;
-		for (Posts post : response.getPosts()) {
+		for (Post post : response.getPosts()) {
 
 			if (postCount == 3) {
 				assertTrue(post.getBody().equalsIgnoreCase("inrhythm") && post.getTitle().equalsIgnoreCase("inrhythm"));

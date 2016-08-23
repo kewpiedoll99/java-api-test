@@ -5,13 +5,14 @@ import java.util.List;
 public class InRhythmResponse {
 
 	private int userCount;
-	private List<Posts> posts;
+	private List<Post> posts;
+	private String json;
 
-	public List<Posts> getPosts() {
+	public List<Post> getPosts() {
 		return posts;
 	}
 
-	public void setPosts(List<Posts> posts) {
+	public void setPosts(List<Post> posts) {
 		this.posts = posts;
 	}
 
@@ -23,4 +24,11 @@ public class InRhythmResponse {
 		this.userCount = userCount;
 	}
 
+	public String getJson() {
+		return json;
+	}
+
+	public void setJson(String json) {
+		this.json = json;
+	}
 }
